@@ -1,4 +1,5 @@
 import "./Modal.css";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +10,7 @@ function Modal({ close }) {
     <div className="blocker" onClick={close}>
       <div id="confirmation" className="modal">
         <FontAwesomeIcon icon={faCircleCheck} className="circle-check" />
-        <p>Employee Created!</p>
+        <p>Employee Created !</p>
         <Link to="/" className="close-modal" onClick={close}>
           Close
         </Link>
